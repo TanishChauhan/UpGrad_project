@@ -13,29 +13,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    
+
 </head>
 
-<body style="background-color: orange;" >
+<body style="background-color: orange;">
     <header>
-  
+
         <div class="container" id="bg">
-        
-          <div class="row">
-            <div class="col-sm-8"> 
-                <h2 class="logo"> ScriBBler </h2>
-                <p class="header-font">Explore, Imagine, Create</p>
-              </div>
-                  <div class="col-sm-4">
-                      <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Sign Up</button>
-                      <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Sign In</button>
-                  </div>
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2 class="logo"> ScriBBler </h2>
+                    <p class="header-font">Explore, Imagine, Create</p>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Sign
+                        Up</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Sign
+                        In</button>
+                </div>
             </div>
-        
-            
+
+
         </div>
-        
-        </header>
+
+    </header>
     <div class="modal fade" id="trash" role="dialog">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
@@ -44,24 +46,24 @@
                     <h4 align="center" class="modal-title"> Are you sure you want to delete?</h4>
                 </div>
                 <div class="modal-body">
-                    <button type="button"  class="btn btn-success"  >Yes</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal" >No</button>
+                    <button type="button" class="btn btn-success">Yes</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="modal fade" id="myModal1" role="dialog">
         <div class="modal-dialog modal-sm">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 align="center" class="modal-title"> Get Started</h4>
-            </div>
-            <div class="modal-body">
-              <form action="/examples/actions/confirmation.php" method="post">
-                          <div class="form-group">
-                        <p>Full Name</p>
-                        <input type ="text" class ="form control" placeholder ="Full Name" required="required">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 align="center" class="modal-title"> Get Started</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="/examples/actions/confirmation.php" method="post">
+                        <div class="form-group">
+                            <p>Full Name</p>
+                            <input type="text" class="form control" placeholder="Full Name" required="required">
                         </div>
                         <br>
                         <div class="form-group">
@@ -73,39 +75,40 @@
                         <div class="form-group">
                             <i class="fa fa-lock"></i>
                             <p>Password</p>
-                            <input type="password" class="form-control" placeholder="Password" required="required">					
+                            <input type="password" class="form-control" placeholder="Password" required="required">
                         </div>
                         <br>
                         <div class="form-group">
                             <p>Confirm Password</p>
-                            <input type="password" class="form-control" placeholder="Confirm Password" required="required">					
+                            <input type="password" class="form-control" placeholder="Confirm Password"
+                                required="required">
                         </div>
                         <br>
-                        
-                        
-                        
+
+
+
                     </form>
-              
+
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+
+                    </div> <input type="submit" class="btn btn-success btn-block btn-lg " value="Sign Up">
+
+                </div>
             </div>
-            <div class="modal-footer">
-            <div class="form-group">
-                        
-                        </div>	<input type="submit" class="btn btn-success btn-block btn-lg " value="Sign Up">
-             
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="modal fade" id="myModal2" role="dialog">
+    </div>
+    <div class="modal fade" id="myModal2" role="dialog">
         <div class="modal-dialog modal-sm">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 align="center" class="modal-title"> Welcome Back</h4>
-            </div>
-            <div class="modal-body">
-              <form action="/examples/actions/confirmation.php" method="post">
-                          
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 align="center" class="modal-title"> Welcome Back</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="/examples/actions/confirmation.php" method="post">
+
                         <div class="form-group">
                             <i class="fa fa-user"></i>
                             <p>User Name </p>
@@ -115,25 +118,25 @@
                         <div class="form-group">
                             <i class="fa fa-lock"></i>
                             <p>Password</p>
-                            <input type="password" class="form-control" placeholder="Password" required="required">					
+                            <input type="password" class="form-control" placeholder="Password" required="required">
                         </div>
                         <br>
-                                
+
                     </form>
-              
+
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+
+                    </div> <input type="submit" class="btn btn-success btn-block btn-lg " value="Sign In">
+                    <p align="left">Don't have an account? </p>
+                    <Button data-toggle="modal" data-target="#myModal1" data-dismiss="modal">Sign Up</a>
+
+                </div>
             </div>
-            <div class="modal-footer">
-            <div class="form-group">
-                        
-                        </div>	<input type="submit" class="btn btn-success btn-block btn-lg " value="Sign In">
-                        <p align= "left">Don't have an account? </p>
-                        <Button  data-toggle ="modal" data-target="#myModal1" data-dismiss="modal">Sign Up</a>
-             
-            </div>
-          </div>
         </div>
-                                                    
-        </div>
+
+    </div>
     <div class="main">
 
         <div class="flex-container">
@@ -148,8 +151,8 @@
                 Since JavaScript does not have any type-checking, either of these keywords can be used to declare a
                 variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same
                 purpose, they are different.
-                
-                <a href="post.html"> <button class="confirmation"  ><i class="fa fa-ellipsis-h"></i></button> </a>
+
+                <a href="post.html"> <button class="confirmation"><i class="fa fa-ellipsis-h"></i></button> </a>
 
             </div>
 
@@ -169,7 +172,7 @@
                 One of the biggest challenges in software development is time. It’s something we can’t easily get more
                 of, but linting can help us make the most out of the time we have.
                 <br><br>
-               <a href="post.html"> <button class="confirmation"  ><i class="fa fa-ellipsis-h"></i></button> </a>
+                <a href="post.html"> <button class="confirmation"><i class="fa fa-ellipsis-h"></i></button> </a>
 
             </div>
 
@@ -192,7 +195,7 @@
                 YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in
                 the industry.
                 <br>
-                <a href="post.html"> <button class="confirmation"  ><i class="fa fa-ellipsis-h"></i></button> </a>
+                <a href="post.html"> <button class="confirmation"><i class="fa fa-ellipsis-h"></i></button> </a>
             </div>
 
         </div>
@@ -209,30 +212,30 @@
                 words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people
                 will map to different words, which leads to confusion when discussing the code.
                 <br><br>
-                <a href="post.html"> <button class="confirmation"  ><i class="fa fa-ellipsis-h"></i></button> </a>
+                <a href="post.html"> <button class="confirmation"><i class="fa fa-ellipsis-h"></i></button> </a>
             </div>
 
         </div>
     </div>
 
-        <div class="main last">
+    <div class="main last">
 
-            <div class="flex-container">
+        <div class="flex-container">
 
-                <div class="left-flex">Shrishti Gupta</div>
-                <div class="ex2">
-                    <button class="confirmation" data-toggle="modal" data-target="#trash" class="btn"><i
-                            class="fa fa-trash"></i></button>
-                    <h4>Everything you should know about ‘module’ & ‘require’ in Node.js</h4><br><br>
+            <div class="left-flex">Shrishti Gupta</div>
+            <div class="ex2">
+                <button class="confirmation" data-toggle="modal" data-target="#trash" class="btn"><i
+                        class="fa fa-trash"></i></button>
+                <h4>Everything you should know about ‘module’ & ‘require’ in Node.js</h4><br><br>
 
-                    Node.js treats each JavaScript file as a separate module. For instance, if you have a file
-                    containing some code and this file is named xyz.js, then this file is treated as a module in Node.
-                    <a href="post.html"> <button class="confirmation"  ><i class="fa fa-ellipsis-h"></i></button> </a>
-                </div>
-
+                Node.js treats each JavaScript file as a separate module. For instance, if you have a file
+                containing some code and this file is named xyz.js, then this file is treated as a module in Node.
+                <a href="post.html"> <button class="confirmation"><i class="fa fa-ellipsis-h"></i></button> </a>
             </div>
 
         </div>
+
+    </div>
 
 </body>
 

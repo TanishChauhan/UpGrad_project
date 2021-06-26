@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
@@ -8,121 +9,122 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+
 </head>
+
 <body>
-    <header>
-  
-        <div class="container" id="bg">
-        
-          <div class="row">
-            <div class="col-sm-8"> 
-                <h2 class="logo"> ScriBBler </h2>
-                <p class="header-font">Explore, Imagine, Create</p>
-              </div>
-                  <div class="col-sm-4">
-                      <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Sign Up</button>
-                      <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Sign In</button>
-                  </div>
-            </div>
-        
-            
+  <header>
+
+    <div class="container" id="bg">
+
+      <div class="row">
+        <div class="col-sm-8">
+          <h2 class="logo"> ScriBBler </h2>
+          <p class="header-font">Explore, Imagine, Create</p>
         </div>
-        
-        </header>
-         
-<div class="container">
-  <!-- <h2>Small Modal</h2>
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Sign Up</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Sign In</button>
+        </div>
+      </div>
+
+
+    </div>
+
+  </header>
+
+  <div class="container">
+    <!-- <h2>Small Modal</h2>
   Trigger the modal with a button
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Sign Up</button> -->
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal1" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 align="center" class="modal-title"> Get Started</h4>
-        </div>
-        <div class="modal-body">
-          <form action="/examples/actions/confirmation.php" method="post">
-          			<div class="form-group">
-                    <p>Full Name</p>
-                    <input type ="text" class ="form control" placeholder ="Full Name" required="required">
-                    </div>
-                    <br>
-					<div class="form-group">
-						<i class="fa fa-user"></i>
-                        <p>User Name </p>
-						<input type="text" class="form-control" placeholder="Username" required="required">
-					</div>
-                    <br>
-					<div class="form-group">
-						<i class="fa fa-lock"></i>
-                        <p>Password</p>
-						<input type="password" class="form-control" placeholder="Password" required="required">					
-					</div>
-                    <br>
-                    <div class="form-group">
-						<p>Confirm Password</p>
-						<input type="password" class="form-control" placeholder="Confirm Password" required="required">					
-					</div>
-                    <br>
-					
-					
-					
-				</form>
-          
-        </div>
-        <div class="modal-footer">
-        <div class="form-group">
-					
-					</div>	<input type="submit" class="btn btn-success btn-block btn-lg " value="Sign Up">
-         
+    <!-- Modal -->
+    <div class="modal fade" id="myModal1" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 align="center" class="modal-title"> Get Started</h4>
+          </div>
+          <div class="modal-body">
+            <form action="/examples/actions/confirmation.php" method="post">
+              <div class="form-group">
+                <p>Full Name</p>
+                <input type="text" class="form control" placeholder="Full Name" required="required">
+              </div>
+              <br>
+              <div class="form-group">
+                <i class="fa fa-user"></i>
+                <p>User Name </p>
+                <input type="text" class="form-control" placeholder="Username" required="required">
+              </div>
+              <br>
+              <div class="form-group">
+                <i class="fa fa-lock"></i>
+                <p>Password</p>
+                <input type="password" class="form-control" placeholder="Password" required="required">
+              </div>
+              <br>
+              <div class="form-group">
+                <p>Confirm Password</p>
+                <input type="password" class="form-control" placeholder="Confirm Password" required="required">
+              </div>
+              <br>
+
+
+
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <div class="form-group">
+
+            </div> <input type="submit" class="btn btn-success btn-block btn-lg " value="Sign Up">
+
+          </div>
         </div>
       </div>
     </div>
-  </div>
     <div class="modal fade" id="myModal2" role="dialog">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 align="center" class="modal-title"> Welcome Back</h4>
-        </div>
-        <div class="modal-body">
-          <form action="/examples/actions/confirmation.php" method="post">
-          			
-					<div class="form-group">
-						<i class="fa fa-user"></i>
-                        <p>User Name </p>
-						<input type="text" class="form-control" placeholder="Username" required="required">
-					</div>
-                    <br>
-					<div class="form-group">
-						<i class="fa fa-lock"></i>
-                        <p>Password</p>
-						<input type="password" class="form-control" placeholder="Password" required="required">					
-					</div>
-                    <br>
-							
-				</form>
-          
-        </div>
-        <div class="modal-footer">
-        <div class="form-group">
-					
-					</div>	<input type="submit" class="btn btn-success btn-block btn-lg " value="Sign In">
-                    <p align= "left">Don't have an account? </p>
-                    <Button  data-toggle ="modal" data-target="#myModal1"  data-dismiss="modal">Sign Up</a>
-         
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 align="center" class="modal-title"> Welcome Back</h4>
+          </div>
+          <div class="modal-body">
+            <form action="/examples/actions/confirmation.php" method="post">
+
+              <div class="form-group">
+                <i class="fa fa-user"></i>
+                <p>User Name </p>
+                <input type="text" class="form-control" placeholder="Username" required="required">
+              </div>
+              <br>
+              <div class="form-group">
+                <i class="fa fa-lock"></i>
+                <p>Password</p>
+                <input type="password" class="form-control" placeholder="Password" required="required">
+              </div>
+              <br>
+
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <div class="form-group">
+
+            </div> <input type="submit" class="btn btn-success btn-block btn-lg " value="Sign In">
+            <p align="left">Don't have an account? </p>
+            <Button data-toggle="modal" data-target="#myModal1" data-dismiss="modal">Sign Up</a>
+
+          </div>
         </div>
       </div>
-    </div>
-                                                    
+
 
 
 
@@ -154,37 +156,41 @@
           </div>
           <div class="modal-body">
             <form action="/examples/actions/confirmation.php" method="post">
-                
-            <div class="form-group">
-              <i class="fa fa-user"></i>
-                          <p>Title: </p>
-              <input style="height:50px;width:50%; font-size:14pt;" type="text" class="form-control"  required="required">
-            </div>
-                      <br>
-          <div class="form-group">
-              <i class="fa fa-user"></i>
-                          <p>Content: </p>
-              <input style="height:400px;font-size:14pt;" type="text" class="form-control"  required="required">
-            </div>
-                      
-          </form>
-            
+
+              <div class="form-group">
+                <i class="fa fa-user"></i>
+                <p>Title: </p>
+                <input style="height:50px;width:50%; font-size:14pt;" type="text" class="form-control"
+                  required="required">
+              </div>
+              <br>
+              <div class="form-group">
+                <i class="fa fa-user"></i>
+                <p>Content: </p>
+                <input style="height:400px;font-size:14pt;" type="text" class="form-control" required="required">
+              </div>
+
+            </form>
+
           </div>
           <div class="modal-footer">
-          <div class="form-group">
-            
-            </div>	<input style="width:20%; text-align:centre;" type="submit" class="btn btn-success btn-block btn-lg " value="Create"  >
-           
+            <div class="form-group">
+
+            </div> <input style="width:20%; text-align:centre;" type="submit" class="btn btn-success btn-block btn-lg "
+              value="Create">
+
           </div>
         </div>
       </div>
     </div>
 
-    <div  class="home-centre">
-           <a href="blogspot.html"> <button  id="all-posts"  type="button" class="btn btn-warning">All Posts</button> </a>
-            <button  id="create-post" type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal3">Create Post</button>
+    <div class="home-centre">
+      <a href="blogspot.html"> <button id="all-posts" type="button" class="btn btn-warning">All Posts</button> </a>
+      <button id="create-post" type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal3">Create
+        Post</button>
     </div>
-</div>
+  </div>
 
 </body>
+
 </html>

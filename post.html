@@ -1,171 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet " href="css/post.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet " href="css/post.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Document</title>
 </head>
+
 <body>
-    <header>
-  
-        <div class="container" id="bg">
-        
-          <div class="row">
-            <div class="col-sm-8"> 
-                <h2 class="logo"> ScriBBler </h2>
-                <p class="header-font">Explore, Imagine, Create</p>
-              </div>
-                  <div class="col-sm-4">
-                      <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Sign Up</button>
-                      <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Sign In</button>
-                  </div>
-            </div>
-        
-            
+  <header>
+
+    <div class="container" id="bg">
+
+      <div class="row">
+        <div class="col-sm-8">
+          <h2 class="logo"> ScriBBler </h2>
+          <p class="header-font">Explore, Imagine, Create</p>
         </div>
-        
-        </header>
-
-
-        <div class="modal fade" id="myModal1" role="dialog">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 align="center" class="modal-title"> Get Started</h4>
-                </div>
-                <div class="modal-body">
-                  <form action="/examples/actions/confirmation.php" method="post">
-                              <div class="form-group">
-                            <p>Full Name</p>
-                            <input type ="text" class ="form control" placeholder ="Full Name" required="required">
-                            </div>
-                            <br>
-                            <div class="form-group">
-                                <i class="fa fa-user"></i>
-                                <p>User Name </p>
-                                <input type="text" class="form-control" placeholder="Username" required="required">
-                            </div>
-                            <br>
-                            <div class="form-group">
-                                <i class="fa fa-lock"></i>
-                                <p>Password</p>
-                                <input type="password" class="form-control" placeholder="Password" required="required">					
-                            </div>
-                            <br>
-                            <div class="form-group">
-                                <p>Confirm Password</p>
-                                <input type="password" class="form-control" placeholder="Confirm Password" required="required">					
-                            </div>
-                            <br>
-                            
-                            
-                            
-                        </form>
-                  
-                </div>
-                <div class="modal-footer">
-                <div class="form-group">
-                            
-                            </div>	<input type="submit" class="btn btn-success btn-block btn-lg " value="Sign Up">
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="modal fade" id="myModal2" role="dialog">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 align="center" class="modal-title"> Welcome Back</h4>
-                </div>
-                <div class="modal-body">
-                  <form action="/examples/actions/confirmation.php" method="post">
-                              
-                            <div class="form-group">
-                                <i class="fa fa-user"></i>
-                                <p>User Name </p>
-                                <input type="text" class="form-control" placeholder="Username" required="required">
-                            </div>
-                            <br>
-                            <div class="form-group">
-                                <i class="fa fa-lock"></i>
-                                <p>Password</p>
-                                <input type="password" class="form-control" placeholder="Password" required="required">					
-                            </div>
-                            <br>
-                                    
-                        </form>
-                  
-                </div>
-                <div class="modal-footer">
-                <div class="form-group">
-                            
-                            </div>	<input type="submit" class="btn btn-success btn-block btn-lg " value="Sign In">
-                            <p align= "left">Don't have an account? </p>
-                            <Button  data-toggle ="modal" data-target="#myModal1" data-dismiss="modal">Sign Up</a>
-                 
-                </div>
-              </div>
-            </div>
-                                                            
-
-        
-            </div>
-    
-    
-    
-        <h1 align="center" id=edit1 contenteditable="false"> The Legacy of Jimi Hendrix</h1><br><br>
-        <input  class="btn btn-danger" type="button" id="save" value="Edit" onclick="saveEdits()" />
-            <br><br>
-            <h2 >Jimi</h2> <br>
-        <div class="lpara"  id="edit" contenteditable="false">
-           <b>Jimi Hendrix</b>, arguably the greatest instrumentalist in the history of rock music".
-            Born in Seattle, Washington, Hendrix began playing guitar at the age of 15. In 1961, he enlisted in the US Army, but was discharged the following year. Soon afterward, he moved to Clarksville, Tennessee, and began playing gigs on the chitlin' circuit, earning a place in the Isley Brothers' backing band and later with Little Richard, with whom he continued to work through mid-1965. He then played with Curtis Knight and the Squires before moving to England in late 1966 after bassist Chas Chandler of the Animals became his manager. Within months, Hendrix had earned three UK top ten hits with the Jimi Hendrix Experience: "Hey Joe", "Purple Haze", and "The Wind Cries Mary".
-            Hendrix was inspired by American rock and roll and electric blues. He favored overdriven amplifiers with high volume and gain, and was instrumental in popularizing the previously undesirable sounds caused by guitar amplifier feedback. He was also one of the first guitarists to make extensive use of tone-altering effects units in mainstream rock, such as fuzz distortion, Octavia, wah-wah, and Uni-Vibe. He was the first musician to use stereophonic phasing effects in recordings. Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began." 
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Sign Up</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Sign In</button>
         </div>
-       
-        <!-- <div id="update"> - Edit the text and click to save for next time</div> -->
-        <p id="toggle" style="display: none;">1</p>
-        <br><br><br>
+      </div>
 
 
-        <button class="btn btn-danger" id="clickme">Like</button>
-        <p id="hide"><i>Be the first one to like this!</i></p>
-    
-        <h5 id ="new1" > </h5>
-        <br><br><br>
+    </div>
 
-       <div align="center">
-        <input style="height:100px ;width:500px;font-size:14pt;" type="text" class="form-control" placeholder="leave a comment..."  required="required" id="example">
-    
-        <!-- <input id="sent" type="submit"  
-                 value="Send">  -->
+  </header>
+
+
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 align="center" class="modal-title"> Get Started</h4>
+        </div>
+        <div class="modal-body">
+          <form action="/examples/actions/confirmation.php" method="post">
+            <div class="form-group">
+              <p>Full Name</p>
+              <input type="text" class="form control" placeholder="Full Name" required="required">
+            </div>
             <br>
-            <button id="sent" class="btn btn-danger">Comment</button>
-            <br><br><br>
-            <p>All Comments</p>
-            <h1 class="commen" id="para">      
-            </h1>
+            <div class="form-group">
+              <i class="fa fa-user"></i>
+              <p>User Name </p>
+              <input type="text" class="form-control" placeholder="Username" required="required">
+            </div>
+            <br>
+            <div class="form-group">
+              <i class="fa fa-lock"></i>
+              <p>Password</p>
+              <input type="password" class="form-control" placeholder="Password" required="required">
+            </div>
+            <br>
+            <div class="form-group">
+              <p>Confirm Password</p>
+              <input type="password" class="form-control" placeholder="Confirm Password" required="required">
+            </div>
+            <br>
+
+
+
+          </form>
+
         </div>
-    
-        <script src="js/post.js"></script>
+        <div class="modal-footer">
+          <div class="form-group">
+
+          </div> <input type="submit" class="btn btn-success btn-block btn-lg " value="Sign Up">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 align="center" class="modal-title"> Welcome Back</h4>
+        </div>
+        <div class="modal-body">
+          <form action="/examples/actions/confirmation.php" method="post">
+
+            <div class="form-group">
+              <i class="fa fa-user"></i>
+              <p>User Name </p>
+              <input type="text" class="form-control" placeholder="Username" required="required">
+            </div>
+            <br>
+            <div class="form-group">
+              <i class="fa fa-lock"></i>
+              <p>Password</p>
+              <input type="password" class="form-control" placeholder="Password" required="required">
+            </div>
+            <br>
+
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <div class="form-group">
+
+          </div> <input type="submit" class="btn btn-success btn-block btn-lg " value="Sign In">
+          <p align="left">Don't have an account? </p>
+          <Button data-toggle="modal" data-target="#myModal1" data-dismiss="modal">Sign Up</a>
+
+        </div>
+      </div>
+    </div>
 
 
-        
-    </body>
-    
-    </html>
-    
+
+  </div>
+
+
+
+  <h1 align="center" id=edit1 contenteditable="false"> The Legacy of Jimi Hendrix</h1><br><br>
+  <input class="btn btn-danger" type="button" id="save" value="Edit" onclick="saveEdits()" />
+  <br><br>
+  <h2>Jimi</h2> <br>
+  <div class="lpara" id="edit" contenteditable="false">
+    <b>Jimi Hendrix</b>, arguably the greatest instrumentalist in the history of rock music".
+    Born in Seattle, Washington, Hendrix began playing guitar at the age of 15. In 1961, he enlisted in the US Army, but
+    was discharged the following year. Soon afterward, he moved to Clarksville, Tennessee, and began playing gigs on the
+    chitlin' circuit, earning a place in the Isley Brothers' backing band and later with Little Richard, with whom he
+    continued to work through mid-1965. He then played with Curtis Knight and the Squires before moving to England in
+    late 1966 after bassist Chas Chandler of the Animals became his manager. Within months, Hendrix had earned three UK
+    top ten hits with the Jimi Hendrix Experience: "Hey Joe", "Purple Haze", and "The Wind Cries Mary".
+    Hendrix was inspired by American rock and roll and electric blues. He favored overdriven amplifiers with high volume
+    and gain, and was instrumental in popularizing the previously undesirable sounds caused by guitar amplifier
+    feedback. He was also one of the first guitarists to make extensive use of tone-altering effects units in mainstream
+    rock, such as fuzz distortion, Octavia, wah-wah, and Uni-Vibe. He was the first musician to use stereophonic phasing
+    effects in recordings. Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument
+    as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned
+    those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he
+    began."
+  </div>
+
+  <!-- <div id="update"> - Edit the text and click to save for next time</div> -->
+  <p id="toggle" style="display: none;">1</p>
+  <br><br><br>
+
+
+  <button class="btn btn-danger" id="clickme">Like</button>
+  <p id="hide"><i>Be the first one to like this!</i></p>
+
+  <h5 id="new1"> </h5>
+  <br><br><br>
+
+  <div align="center">
+    <input style="height:100px ;width:500px;font-size:14pt;" type="text" class="form-control"
+      placeholder="leave a comment..." required="required" id="example">
+
+    <!-- <input id="sent" type="submit"  
+                 value="Send">  -->
+    <br>
+    <button id="sent" class="btn btn-danger">Comment</button>
+    <br><br><br>
+    <p>All Comments</p>
+    <h1 class="commen" id="para">
+    </h1>
+  </div>
+
+  <script src="js/post.js"></script>
+
+
+
 </body>
+
+</html>
+
+</body>
+
 </html>
