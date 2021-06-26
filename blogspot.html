@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BlogSpot</title>
+    <!-- <link rel="stylesheet" href="one.css"> -->
+    <link rel="stylesheet" href="css/blogspot.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    
+</head>
+
+<body style="background-color: orange;" >
+    <header>
+  
+        <div class="container" id="bg">
+        
+          <div class="row">
+            <div class="col-sm-8"> 
+                <h2 class="logo"> ScriBBler </h2>
+                <p class="header-font">Explore, Imagine, Create</p>
+              </div>
+                  <div class="col-sm-4">
+                      <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Sign Up</button>
+                      <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Sign In</button>
+                  </div>
+            </div>
+        
+            
+        </div>
+        
+        </header>
+    <div class="modal fade" id="trash" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 align="center" class="modal-title"> Are you sure you want to delete?</h4>
+                </div>
+                <div class="modal-body">
+                    <button type="button"  class="btn btn-success"  >Yes</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" >No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 align="center" class="modal-title"> Get Started</h4>
+            </div>
+            <div class="modal-body">
+              <form action="/examples/actions/confirmation.php" method="post">
+                          <div class="form-group">
+                        <p>Full Name</p>
+                        <input type ="text" class ="form control" placeholder ="Full Name" required="required">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <i class="fa fa-user"></i>
+                            <p>User Name </p>
+                            <input type="text" class="form-control" placeholder="Username" required="required">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <i class="fa fa-lock"></i>
+                            <p>Password</p>
+                            <input type="password" class="form-control" placeholder="Password" required="required">					
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <p>Confirm Password</p>
+                            <input type="password" class="form-control" placeholder="Confirm Password" required="required">					
+                        </div>
+                        <br>
+                        
+                        
+                        
+                    </form>
+              
+            </div>
+            <div class="modal-footer">
+            <div class="form-group">
+                        
+                        </div>	<input type="submit" class="btn btn-success btn-block btn-lg " value="Sign Up">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 align="center" class="modal-title"> Welcome Back</h4>
+            </div>
+            <div class="modal-body">
+              <form action="/examples/actions/confirmation.php" method="post">
+                          
+                        <div class="form-group">
+                            <i class="fa fa-user"></i>
+                            <p>User Name </p>
+                            <input type="text" class="form-control" placeholder="Username" required="required">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <i class="fa fa-lock"></i>
+                            <p>Password</p>
+                            <input type="password" class="form-control" placeholder="Password" required="required">					
+                        </div>
+                        <br>
+                                
+                    </form>
+              
+            </div>
+            <div class="modal-footer">
+            <div class="form-group">
+                        
+                        </div>	<input type="submit" class="btn btn-success btn-block btn-lg " value="Sign In">
+                        <p align= "left">Don't have an account? </p>
+                        <Button  data-toggle ="modal" data-target="#myModal1" data-dismiss="modal">Sign Up</a>
+             
+            </div>
+          </div>
+        </div>
+                                                    
+        </div>
+    <div class="main">
+
+        <div class="flex-container">
+
+            <div class="left-flex">Shrishti Gupta</div>
+            <div class="ex2">
+                <button class="confirmation" data-toggle="modal" data-target="#trash" class="btn"><i
+                        class="fa fa-trash"></i></button>
+                <h4>
+                    ‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</h4><br><br>
+
+                Since JavaScript does not have any type-checking, either of these keywords can be used to declare a
+                variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same
+                purpose, they are different.
+                
+                <a href="post.html"> <button class="confirmation"  ><i class="fa fa-ellipsis-h"></i></button> </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="flex-container">
+
+            <div class="left-flex">Colby</div>
+            <div class="ex2">
+                <button class="confirmation" data-toggle="modal" data-target="#trash" class="btn"><i
+                        class="fa fa-trash"></i></button>
+                <h4> What is linting and how can it save you time?</h4><br><br>
+
+                ‘let’ me be a ‘const’(ant), not a ‘var’(iable)!
+
+                One of the biggest challenges in software development is time. It’s something we can’t easily get more
+                of, but linting can help us make the most out of the time we have.
+                <br><br>
+               <a href="post.html"> <button class="confirmation"  ><i class="fa fa-ellipsis-h"></i></button> </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="main">
+
+        <div class="flex-container">
+
+            <div class="left-flex">Yazeed</div>
+            <div class="ex2">
+                <button class="confirmation" data-toggle="modal" data-target="#trash" class="btn"><i
+                        class="fa fa-trash"></i></button>
+                <h4> How to Get More Views on Your Tech Blog</h4><br><br>
+
+                If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog,
+                YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in
+                the industry.
+                <br>
+                <a href="post.html"> <button class="confirmation"  ><i class="fa fa-ellipsis-h"></i></button> </a>
+            </div>
+
+        </div>
+
+        <div class="flex-container">
+
+            <div class="left-flex">Cedd</div>
+            <div class="ex2">
+                <button class="confirmation" data-toggle="modal" data-target="#trash" class="btn"><i
+                        class="fa fa-trash"></i></button>
+                <h4>How to write easily describable code</h4><br><br>
+
+                When code is not describable using words, most people have to do some mental mapping to turn it in to
+                words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people
+                will map to different words, which leads to confusion when discussing the code.
+                <br><br>
+                <a href="post.html"> <button class="confirmation"  ><i class="fa fa-ellipsis-h"></i></button> </a>
+            </div>
+
+        </div>
+    </div>
+
+        <div class="main last">
+
+            <div class="flex-container">
+
+                <div class="left-flex">Shrishti Gupta</div>
+                <div class="ex2">
+                    <button class="confirmation" data-toggle="modal" data-target="#trash" class="btn"><i
+                            class="fa fa-trash"></i></button>
+                    <h4>Everything you should know about ‘module’ & ‘require’ in Node.js</h4><br><br>
+
+                    Node.js treats each JavaScript file as a separate module. For instance, if you have a file
+                    containing some code and this file is named xyz.js, then this file is treated as a module in Node.
+                    <a href="post.html"> <button class="confirmation"  ><i class="fa fa-ellipsis-h"></i></button> </a>
+                </div>
+
+            </div>
+
+        </div>
+
+</body>
+
+</html>

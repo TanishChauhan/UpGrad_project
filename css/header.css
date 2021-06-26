@@ -1,0 +1,16 @@
+.header-font{
+    font-family: 'Dancing Script',cursive ;
+    text-align: left;
+}
+.logo{
+    font-family: 'Dancing Script', cursive;
+    color:blue;
+    text-align:left;
+}
+
+header {
+	padding-top: 50px;
+	
+	font-size: 20px;
+	
+}
