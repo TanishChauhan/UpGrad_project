@@ -1,9 +1,9 @@
 .header-font{
-    font-family: 'Dancing Script',cursive ;
+    font-family: 'Satisfy', cursive;
     text-align: left;
 }
 .logo{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Satisfy', cursive;
     color:blue;
     text-align:left;
 }
@@ -13,4 +13,7 @@ header {
 	
 	font-size: 20px;
 	
+}
+#field-color{
+    background-color: rgb(218, 225, 231);
 }

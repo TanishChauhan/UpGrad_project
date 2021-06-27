@@ -1,7 +1,7 @@
 .flex-container {
     display: flex;
     flex-direction: row;
-    background-color: DodgerBlue;
+    background-color: rgb(118, 131, 189);
     width: 550px;
     margin: 40px;
 }
@@ -30,7 +30,7 @@ font-size: 30px;
 }
 
 div.ex2 {
-    background-color: lightblue;
+    background-color: rgba(120, 238, 193, 0.658);
     width: 110px;
     margin: 10px;
     padding: 12px;

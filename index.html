@@ -2,20 +2,24 @@
 <html lang="en">
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>Home Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking the stylesheet files  -->
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/header.css">
+  <!-- linking the bootstrap cdn style link  -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-
+  <!-- linking the font family link  -->
+   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <!-- linking javascript link of bootstrap  -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
+  <!-- add a header, it will be used repeatedly later -->
   <header>
 
     <div class="container" id="bg">
@@ -26,8 +30,9 @@
           <p class="header-font">Explore, Imagine, Create</p>
         </div>
         <div class="col-sm-4">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Sign Up</button>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Sign In</button>
+          <!-- Using classes of bootstrap, which are already defined -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#UpModal">Sign Up</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#InModal">Sign In</button>
         </div>
       </div>
 
@@ -37,12 +42,11 @@
   </header>
 
   <div class="container">
-    <!-- <h2>Small Modal</h2>
-  Trigger the modal with a button
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Sign Up</button> -->
+   
 
     <!-- Modal -->
-    <div class="modal fade" id="myModal1" role="dialog">
+    <!-- SignUp Modal , adding Form inside it -->
+    <div class="modal fade" id="UpModal" role="dialog">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-header">
@@ -53,24 +57,24 @@
             <form action="/examples/actions/confirmation.php" method="post">
               <div class="form-group">
                 <p>Full Name</p>
-                <input type="text" class="form control" placeholder="Full Name" required="required">
+                <input id="field-color" type="text" class="form control" placeholder="Full Name" required="required">
               </div>
               <br>
               <div class="form-group">
                 <i class="fa fa-user"></i>
                 <p>User Name </p>
-                <input type="text" class="form-control" placeholder="Username" required="required">
+                <input id="field-color" type="text" class="form-control" placeholder="Username" required="required">
               </div>
               <br>
               <div class="form-group">
                 <i class="fa fa-lock"></i>
                 <p>Password</p>
-                <input type="password" class="form-control" placeholder="Password" required="required">
+                <input id="field-color" type="password" class="form-control" placeholder="Password" required="required">
               </div>
               <br>
               <div class="form-group">
                 <p>Confirm Password</p>
-                <input type="password" class="form-control" placeholder="Confirm Password" required="required">
+                <input id="field-color" type="password" class="form-control" placeholder="Confirm Password" required="required">
               </div>
               <br>
 
@@ -88,7 +92,8 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="myModal2" role="dialog">
+    <!-- Sign In Modal, adding Form in it -->
+    <div class="modal fade" id="InModal" role="dialog">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-header">
@@ -101,13 +106,13 @@
               <div class="form-group">
                 <i class="fa fa-user"></i>
                 <p>User Name </p>
-                <input type="text" class="form-control" placeholder="Username" required="required">
+                <input id="field-color" type="text" class="form-control" placeholder="Username" required="required">
               </div>
               <br>
               <div class="form-group">
                 <i class="fa fa-lock"></i>
                 <p>Password</p>
-                <input type="password" class="form-control" placeholder="Password" required="required">
+                <input id="field-color" type="password" class="form-control" placeholder="Password" required="required">
               </div>
               <br>
 
@@ -118,8 +123,9 @@
             <div class="form-group">
 
             </div> <input type="submit" class="btn btn-success btn-block btn-lg " value="Sign In">
+            <!-- giving an option to switch to sign up modal from sign in modal  -->
             <p align="left">Don't have an account? </p>
-            <Button data-toggle="modal" data-target="#myModal1" data-dismiss="modal">Sign Up</a>
+            <a style = "cursor:pointer;" data-toggle="modal" data-target="#UpModal" data-dismiss="modal">Sign Up</a>
 
           </div>
         </div>
@@ -128,26 +134,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
-    <!-- <h2>Small Modal</h2>
-    Trigger the modal with a button
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Open Small Modal</button>
-   -->
+    
     <!-- Modal -->
-    <div class="modal fade" id="myModal3" role="dialog">
+    <!-- Create Post Modal  -->
+    <div class="modal fade" id="CreateModal" role="dialog">
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header">
@@ -160,14 +151,14 @@
               <div class="form-group">
                 <i class="fa fa-user"></i>
                 <p>Title: </p>
-                <input style="height:50px;width:50%; font-size:14pt;" type="text" class="form-control"
-                  required="required">
+                <input id="field-color" style="height:50px;width:50%; font-size:14pt;" type="text" class="form-control" placeholder="Title name here..."
+                  required>
               </div>
               <br>
               <div class="form-group">
                 <i class="fa fa-user"></i>
                 <p>Content: </p>
-                <input style="height:400px;font-size:14pt;" type="text" class="form-control" required="required">
+                <input id="field-color" style="height:400px;font-size:14pt;" type="text" class="form-control" required>
               </div>
 
             </form>
@@ -185,8 +176,9 @@
     </div>
 
     <div class="home-centre">
+      <!-- adding another html file link in all posts button  -->
       <a href="blogspot.html"> <button id="all-posts" type="button" class="btn btn-warning">All Posts</button> </a>
-      <button id="create-post" type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal3">Create
+      <button id="create-post" type="button" class="btn btn-warning" data-toggle="modal" data-target="#CreateModal">Create
         Post</button>
     </div>
   </div>

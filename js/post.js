@@ -42,8 +42,8 @@ button.onclick = function() {
 
 count += 1;
 button.innerHTML = "Liked !" ;
-var hmm = document.getElementById("new1");
-hmm.innerHTML =  "\nThe user has liked" + " " +count +" " + "times!";
+var countLike = document.getElementById("new1");
+countLike.innerHTML =  "\nThe user has liked" + " " +count +" " + "times!";
 };
 
 window.onclick = function(e)

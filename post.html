@@ -5,17 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- linking bootstrap stylesheet cdn  -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- linking local css files  -->
   <link rel="stylesheet " href="css/post.css">
   <link rel="stylesheet" href="css/header.css">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <!-- adding that font family for header  -->
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <!-- adding bootstrap javascript link  -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <title>Document</title>
+  <title>Post Page</title>
 </head>
 
 <body>
+  <!-- Adding the same header content as in first page  -->
   <header>
 
     <div class="container" id="bg">
@@ -26,8 +31,8 @@
           <p class="header-font">Explore, Imagine, Create</p>
         </div>
         <div class="col-sm-4">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Sign Up</button>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Sign In</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#UpModal">Sign Up</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#InModal">Sign In</button>
         </div>
       </div>
 
@@ -37,7 +42,7 @@
   </header>
 
 
-  <div class="modal fade" id="myModal1" role="dialog">
+  <div class="modal fade" id="UpModal" role="dialog">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
@@ -48,24 +53,24 @@
           <form action="/examples/actions/confirmation.php" method="post">
             <div class="form-group">
               <p>Full Name</p>
-              <input type="text" class="form control" placeholder="Full Name" required="required">
+              <input id="field-color" type="text" class="form control" placeholder="Full Name" required="required">
             </div>
             <br>
             <div class="form-group">
               <i class="fa fa-user"></i>
               <p>User Name </p>
-              <input type="text" class="form-control" placeholder="Username" required="required">
+              <input id="field-color" type="text" class="form-control" placeholder="Username" required="required">
             </div>
             <br>
             <div class="form-group">
               <i class="fa fa-lock"></i>
               <p>Password</p>
-              <input type="password" class="form-control" placeholder="Password" required="required">
+              <input id="field-color" type="password" class="form-control" placeholder="Password" required="required">
             </div>
             <br>
             <div class="form-group">
               <p>Confirm Password</p>
-              <input type="password" class="form-control" placeholder="Confirm Password" required="required">
+              <input id="field-color" type="password" class="form-control" placeholder="Confirm Password" required="required">
             </div>
             <br>
 
@@ -97,13 +102,13 @@
             <div class="form-group">
               <i class="fa fa-user"></i>
               <p>User Name </p>
-              <input type="text" class="form-control" placeholder="Username" required="required">
+              <input id="field-color" type="text" class="form-control" placeholder="Username" required="required">
             </div>
             <br>
             <div class="form-group">
               <i class="fa fa-lock"></i>
               <p>Password</p>
-              <input type="password" class="form-control" placeholder="Password" required="required">
+              <input id="field-color" type="password" class="form-control" placeholder="Password" required="required">
             </div>
             <br>
 
@@ -115,7 +120,7 @@
 
           </div> <input type="submit" class="btn btn-success btn-block btn-lg " value="Sign In">
           <p align="left">Don't have an account? </p>
-          <Button data-toggle="modal" data-target="#myModal1" data-dismiss="modal">Sign Up</a>
+          <a data-toggle="modal" data-target="#UpModal" data-dismiss="modal">Sign Up</a>
 
         </div>
       </div>
@@ -125,12 +130,16 @@
 
   </div>
 
-
+<!-- Adding editable title  -->
 
   <h1 align="center" id=edit1 contenteditable="false"> The Legacy of Jimi Hendrix</h1><br><br>
+  <div align ="right">
+    <!-- adding input field mechanism -->
   <input class="btn btn-danger" type="button" id="save" value="Edit" onclick="saveEdits()" />
+  </div>
   <br><br>
   <h2>Jimi</h2> <br>
+  <!-- Adding the content which is editable on edit option  -->
   <div class="lpara" id="edit" contenteditable="false">
     <b>Jimi Hendrix</b>, arguably the greatest instrumentalist in the history of rock music".
     Born in Seattle, Washington, Hendrix began playing guitar at the age of 15. In 1961, he enlisted in the US Army, but
@@ -149,11 +158,11 @@
     began."
   </div>
 
-  <!-- <div id="update"> - Edit the text and click to save for next time</div> -->
+
   <p id="toggle" style="display: none;">1</p>
   <br><br><br>
 
-
+<!-- Like button  -->
   <button class="btn btn-danger" id="clickme">Like</button>
   <p id="hide"><i>Be the first one to like this!</i></p>
 
@@ -164,8 +173,7 @@
     <input style="height:100px ;width:500px;font-size:14pt;" type="text" class="form-control"
       placeholder="leave a comment..." required="required" id="example">
 
-    <!-- <input id="sent" type="submit"  
-                 value="Send">  -->
+
     <br>
     <button id="sent" class="btn btn-danger">Comment</button>
     <br><br><br>
@@ -174,6 +182,7 @@
     </h1>
   </div>
 
+  <!-- Adding js file  -->
   <script src="js/post.js"></script>
 
 

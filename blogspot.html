@@ -2,20 +2,24 @@
 <html>
 
 <head>
-    <title>BlogSpot</title>
-    <!-- <link rel="stylesheet" href="one.css"> -->
+    <title>Blogging Page </title>
+    <!-- linking stylesheet files  -->
     <link rel="stylesheet" href="css/blogspot.css">
     <link rel="stylesheet" href="css/header.css">
+    <!-- giving link of buttons like trash and ellipsis  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap cdn style sheet link  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <!-- Using google font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <!-- BootStrap javascript files  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
 </head>
-
+<!-- Applied inline Css in body , beacause of highest preference -->
 <body style="background-color: orange;">
     <header>
 
@@ -27,9 +31,9 @@
                     <p class="header-font">Explore, Imagine, Create</p>
                 </div>
                 <div class="col-sm-4">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Sign
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#UpModal">Sign
                         Up</button>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Sign
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#InModal">Sign
                         In</button>
                 </div>
             </div>
@@ -38,21 +42,24 @@
         </div>
 
     </header>
+
+    <!-- defining Modal for trash button  -->
     <div class="modal fade" id="trash" role="dialog">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 align="center" class="modal-title"> Are you sure you want to delete?</h4>
+                    <h4 align="center" class="modal-title"> Are you sure you want to delete the blog?</h4>
                 </div>
                 <div class="modal-body">
-                    <button type="button" class="btn btn-success">Yes</button>
+                    <button type="button" class="btn btn-success">Yes</button> 
+                
                     <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal fade" id="UpModal" role="dialog">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
@@ -63,24 +70,24 @@
                     <form action="/examples/actions/confirmation.php" method="post">
                         <div class="form-group">
                             <p>Full Name</p>
-                            <input type="text" class="form control" placeholder="Full Name" required="required">
+                            <input id="field-color" type="text" class="form control" placeholder="Full Name" required="required">
                         </div>
                         <br>
                         <div class="form-group">
                             <i class="fa fa-user"></i>
                             <p>User Name </p>
-                            <input type="text" class="form-control" placeholder="Username" required="required">
+                            <input id="field-color" type="text" class="form-control" placeholder="Username" required="required">
                         </div>
                         <br>
                         <div class="form-group">
                             <i class="fa fa-lock"></i>
                             <p>Password</p>
-                            <input type="password" class="form-control" placeholder="Password" required="required">
+                            <input id="field-color" type="password" class="form-control" placeholder="Password" required="required">
                         </div>
                         <br>
                         <div class="form-group">
                             <p>Confirm Password</p>
-                            <input type="password" class="form-control" placeholder="Confirm Password"
+                            <input id="field-color" type="password" class="form-control" placeholder="Confirm Password"
                                 required="required">
                         </div>
                         <br>
@@ -99,7 +106,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal fade" id="InModal" role="dialog">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
@@ -112,13 +119,13 @@
                         <div class="form-group">
                             <i class="fa fa-user"></i>
                             <p>User Name </p>
-                            <input type="text" class="form-control" placeholder="Username" required="required">
+                            <input id="field-color" type="text" class="form-control" placeholder="Username" required="required">
                         </div>
                         <br>
                         <div class="form-group">
                             <i class="fa fa-lock"></i>
                             <p>Password</p>
-                            <input type="password" class="form-control" placeholder="Password" required="required">
+                            <input id="field-color" type="password" class="form-control" placeholder="Password" required="required">
                         </div>
                         <br>
 
@@ -130,7 +137,7 @@
 
                     </div> <input type="submit" class="btn btn-success btn-block btn-lg " value="Sign In">
                     <p align="left">Don't have an account? </p>
-                    <Button data-toggle="modal" data-target="#myModal1" data-dismiss="modal">Sign Up</a>
+                    <a data-toggle="modal" data-target="#UpModal" data-dismiss="modal">Sign Up</a>
 
                 </div>
             </div>
@@ -141,7 +148,7 @@
 
         <div class="flex-container">
 
-            <div class="left-flex">Shrishti Gupta</div>
+            <div class="left-flex">Shrishti </div>
             <div class="ex2">
                 <button class="confirmation" data-toggle="modal" data-target="#trash" class="btn"><i
                         class="fa fa-trash"></i></button>
@@ -149,8 +156,9 @@
                     ‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</h4><br><br>
 
                 Since JavaScript does not have any type-checking, either of these keywords can be used to declare a
-                variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same
-                purpose, they are different.
+                variable of any type (datatype) in JavaScript. Though all the three keywords are used for the 
+
+                <!-- linking another html file to the ellipsis button  -->
 
                 <a href="post.html"> <button class="confirmation"><i class="fa fa-ellipsis-h"></i></button> </a>
 
@@ -222,14 +230,14 @@
 
         <div class="flex-container">
 
-            <div class="left-flex">Shrishti Gupta</div>
+            <div class="left-flex">Shrishti </div>
             <div class="ex2">
                 <button class="confirmation" data-toggle="modal" data-target="#trash" class="btn"><i
                         class="fa fa-trash"></i></button>
                 <h4>Everything you should know about ‘module’ & ‘require’ in Node.js</h4><br><br>
 
-                Node.js treats each JavaScript file as a separate module. For instance, if you have a file
-                containing some code and this file is named xyz.js, then this file is treated as a module in Node.
+                The following is a fact.Node.js treats each JavaScript file as a separate module. For instance, if you have a file
+                containing some code and this file is named xyz.js, then this file is treated as a module in the given node 
                 <a href="post.html"> <button class="confirmation"><i class="fa fa-ellipsis-h"></i></button> </a>
             </div>
 
